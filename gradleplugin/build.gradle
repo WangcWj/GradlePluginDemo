@@ -1,0 +1,22 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+    //这里面你想用什么就去引入什么
+    compile 'com.android.tools.build:gradle:3.0.0'
+}
+
+repositories {
+    jcenter()
+}
+
+uploadArchives {
+    repositories.mavenDeployer {
+        repository(url: uri('../gradleplugin/src/main/repertory'))
+        pom.groupId = 'com.wang'
+        pom.artifactId = 'demo-plugin'
+        pom.version = "1.0.0"
+    }
+}

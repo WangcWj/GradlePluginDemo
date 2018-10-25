@@ -1,6 +1,11 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.demo.plugin'
 
+cus {
+    name 'Wang'
+    path 'Chao'
+}
+
 android {
     compileSdkVersion 26
     defaultConfig {
@@ -24,3 +29,4 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
 }
+

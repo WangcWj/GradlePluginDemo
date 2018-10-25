@@ -17,6 +17,8 @@ uploadArchives {
         repository(url: uri('../gradleplugin/src/main/repertory'))
         pom.groupId = 'com.wang'
         pom.artifactId = 'demo-plugin'
-        pom.version = "1.0.0"
+        pom.version = "1.0.1"
     }
 }
+
+

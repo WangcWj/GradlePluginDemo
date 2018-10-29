@@ -72,7 +72,7 @@ uploadArchives {
 
 这样我们的本地仓库创建完毕,可以再根目录的build.gradle里面引用了。
 
-**第八步：**引用插件。在根目录的*build.gradle*里面配置我们本地仓库的*maven*地址以及*classpath*。
+**第八步：** 引用插件。在根目录的*build.gradle*里面配置我们本地仓库的*maven*地址以及*classpath*。
 
 ![](https://raw.githubusercontent.com/WangcWj/image-folder/master/plugin-ten.png)
 

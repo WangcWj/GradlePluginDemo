@@ -7,9 +7,10 @@ import org.gradle.api.Project
 class DemoPlugin implements Plugin<Project>{
     @Override
     void apply(Project project) {
-        project.extensions.create("cus",CusExtension)
+        CusProperties cus = project.extensions.create("cusProperties",CusProperties)
+        println("=================   打印1  "+cus.toString())
         project.afterEvaluate {
-            println("=================   "+project.cus.name)
+            println("=================   打印2  "+cus.toString())
         }
     }
 }
